@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qna-stylist"
+version = "0.1.0"
+description = "CrewAI-based response stylist to make QnA answers lively and witty without losing accuracy."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "crewai>=0.28.0",
+  "pydantic>=2.6.0",
+  "tenacity>=8.2.3",
+  "structlog>=24.1.0",
+  "python-dotenv>=1.0.1",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
