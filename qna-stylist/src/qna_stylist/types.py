@@ -14,3 +14,4 @@ class StylistResult(TypedDict):
     used_tone: StylistTone
     safety_notes: Optional[str]
     elapsed_ms: int
+    cache_hit: bool
